@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./Resource/style/thuvienreponsive.css">
+    <link rel="stylesheet" href="./Resource/style/main.css">
+    <link rel="stylesheet" href="./Resource/style/base.css">
+    <link rel="stylesheet" href="./Resource/style/reponsive.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+    <!--name class with BEM (block__element--modifier)-->
+    <div id="maindiv">
+        <!--làm header-->
+        <header class="header">
+            <div class="grid wide">
+                <!--navbar-->
+                <nav class="header__navbar hideon-mobileandtablet">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--phancach QR_display">
+                            Vào cửa hàng trên ứng dụng
+                            <div class="header__QR">
+                                <img src="./Resource/img/QR.png" alt="" class="QR_imgne">
+                                <div class="QR__appdownload">
+                                    <a class="dm" href="https://play.google.com/store/apps/details?id=com.shopee.vn"><img class="header__QR-chplay" src="./Resource/img/chplay.png" alt=""></a>
+                                    <a href="https://apps.apple.com/vn/app/id959841449"><img class="header__QR-appstore" src="./Resource/img/appstore.png" alt=""></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item social_display ketnoi">
+                            Kết nối(Front-end by Tungnamh9911) <ion-icon class="iconketnoi"name="logo-facebook"></ion-icon> <ion-icon class="iconketnoi" name="logo-instagram"></ion-icon>
+                            <div class="header__social-credit">
+                                <a href="https://www.facebook.com/Akami32/"><img class="social-credit-facebook" src="./Resource/img/facebook.png" alt=""></a>
+                                <a href="./Resource/pagerenhanh/pageerror.html"><img class="social-credit-instagram" src="./Resource/img/instagram.jpg" alt=""></a>
+                            </div>
+                        </li>
+                    </ul>
+
+
+    
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--hasnotify"> <a href="" class="navbar-item-link"><ion-icon class="icon" name="star-outline"></ion-icon> Thông báo</a> 
+                            <div class="header__notify">
+                                <header class="header__notify-header">
+                                    <h3>Thông báo mới nhận</h3>
+                                </header>
+                                <ul class="header__notify-list">
+                                    <li class="header_notify-item">
+                                        <a class="header__notify-link .header__notify-link--readed" href="">
+                                            <span><img class="header__notify-img" src="./Resource/img/notify1.png" alt=""></span>
+                                            <div>
+                                                <p class="header__notify-name">myphamre</p>
+                                                <span class="header__notify-descriotion">Mô tả của myphamredep</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header_notify-item">
+                                        <a class="header__notify-link" href="">
+                                            <span><img class="header__notify-img" src="./Resource/img/notify1.png" alt=""></span>
+                                            <div>
+                                                <p class="header__notify-name">myphamcungtamtam</p>
+                                                <span class="header__notify-descriotion">Mô tả của myphamcungtamtam</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header_notify-item">
+                                        <a class="header__notify-link" href="">
+                                            <span><img class="header__notify-img" src="./Resource/img/notify1.png" alt=""></span>
+                                            <div>
+                                                <p class="header__notify-name">myphamxauvailon</p>
+                                                <span class="header__notify-descriotion">Mô tả của myphamxauvailon</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+                                <footer class="header__notify-footer">
+                                    <a class="header__notify-footer-text" href="">Xem tất cả</a>
+                                </footer>
+                            </div>
+                        </li>
+
+
+                        <li class="header__navbar-item"> <a href="" class="navbar-item-link"><ion-icon class="icon" name="help-circle-outline"></ion-icon> Trợ giúp</a> </li>
+                        <!-- <li class="header__navbar-item header__navbar-item--phancach">Đăng ký</li>
+                        <li class="header__navbar-item">Đăng nhập</li> -->
+
+                        <li class="header__navbar-item header__navbar-user">
+                            <img class="header__navbar-user-img" src="https://static.fullstack.edu.vn/static/media/fallback-avatar.155cdb2376c5d99ea151.jpg" alt="">
+                            <span class="header__navbar-user-name">Sơn tùng</span>
+                            
+                            <ul class="header__navbar-user-menu">
+                                <li class="header__navbar-user-item">
+                                    <a href="">Tài khoản của tôi</a>
+                                </li>
+                                <li class="header__navbar-user-item">
+                                    <a href="">Địa chỉ</a>
+                                </li>
+                                <li class="header__navbar-user-item">
+                                    <a href="">Đơn mua</a>
+                                </li>
+                                <li class="header__navbar-user-item">
+                                    <a href="">Đăng xuất</a>
+                                </li>
+                            </ul>
+                        </li>
+
+
+
+
+                    </ul>
+                </nav>
+                <!--end navbar-->
+
+                <!--header 2-->
+                <div class="header-with-search">
+                    <label class="header__mobile-search" for="mobile-search-checkbox">
+                        <ion-icon class="header__mobile-search-icon" name="search-sharp"></ion-icon>
+                    </label>
+
+
+                    <div class="header__logo hideon_tablet">
+                        <a class="header__logo-text"href="/">UI</a>
+                    </div>
+                    <div class="header__search ">
+                        <div class="header__search-input-warp">
+                            <input class="header__search-input" placeholder="Tìm thứ gì đó" type="text" name="" id="">
+
+                            <!--search history-->
+                            <div class="header__search-history">
+                                <h3 class="header__search-history-Heading">Lịch sử tìm kiếm</h3>
+                                <ul class="header__search-history-list">
+                                    <li class="header__search-history-item">
+                                        <a href="">Haha</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="">Hihi</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header_search-select">
+                            <span class="ngancach3"></span>
+                            <span class="header_search-select-lable">Trong shop</span>
+                            <ion-icon class="header_search-select-icon" name="chevron-down-outline"></ion-icon>    
+                            <ul class="header__search-options">
+                                <li class="option-item ">
+                                    <span>Trong shop</span>
+                                    <ion-icon class="option-item-icon" name="checkmark-outline"></ion-icon>
+                                </li>
+                                <li class="option-item option-item-Active">
+                                    <span>Ngoài shop</span>
+                                    <ion-icon class="option-item-icon" name="checkmark-outline"></ion-icon>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header__search-btn">
+                            <ion-icon class="header__search-btn-icon" name="search-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="header__cart">
+                        <div class="header__cart-warp">
+                            <ion-icon class="header__cart-icon" name="cart-outline"></ion-icon>
+                            <span class="header__cart-notify">3</span>
+
+                            <!-- cart:header__cart-list--no-cart -->
+                            <div class="header__cart-list"> 
+                                <img class="empty-cart__img"src="./Resource/img/empty-cart.png" alt="">
+
+                                <h3 class="header__cart-heading">Sản phẩm đã thêm</h3>
+                                <ul class="header__cart-list-item">
+                                    <!--cart item-->
+                                    <li class="header__cart-item">
+                                        <img class="header__cart-list-img"src="./Resource/img/notify1.png" alt="">
+                                        <div class="header__cart-item-info">
+                                            <div class="info-head">
+                                                <h5 class="header__cart-item-name">Kem duong da loc l</h5>
+                                                <div class="info-head-price-warp">
+                                                    <span class="header__cart-item-price">300.000đ</span>
+                                                    <span class="header__cart-item-multi">x</span>
+                                                    <span class="header__cart-item-amount">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="info-body">
+                                                <span class="header__cart-item-dep">phân loại hàng:bạc</span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="header__cart-item">
+                                        <img class="header__cart-list-img"src="./Resource/img/notify1.png" alt="">
+                                        <div class="header__cart-item-info">
+                                            <div class="info-head">
+                                                <h5 class="header__cart-item-name">Kem duong da loc l</h5>
+                                                <div class="info-head-price-warp">
+                                                    <span class="header__cart-item-price">300.000đ</span>
+                                                    <span class="header__cart-item-multi">x</span>
+                                                    <span class="header__cart-item-amount">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="info-body">
+                                                <span class="header__cart-item-dep">phân loại hàng:bạc</span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="header__cart-item">
+                                        <img class="header__cart-list-img"src="./Resource/img/notify1.png" alt="">
+                                        <div class="header__cart-item-info">
+                                            <div class="info-head">
+                                                <h5 class="header__cart-item-name">Kem duong da loc l</h5>
+                                                <div class="info-head-price-warp">
+                                                    <span class="header__cart-item-price">300.000đ</span>
+                                                    <span class="header__cart-item-multi">x</span>
+                                                    <span class="header__cart-item-amount">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="info-body">
+                                                <span class="header__cart-item-dep">phân loại hàng:bạc</span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="header__cart-item">
+                                        <img class="header__cart-list-img"src="./Resource/img/notify1.png" alt="">
+                                        <div class="header__cart-item-info">
+                                            <div class="info-head">
+                                                <h5 class="header__cart-item-name">Kem duong da loc l</h5>
+                                                <div class="info-head-price-warp">
+                                                    <span class="header__cart-item-price">300.000đ</span>
+                                                    <span class="header__cart-item-multi">x</span>
+                                                    <span class="header__cart-item-amount">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="info-body">
+                                                <span class="header__cart-item-dep">phân loại hàng:bạc</span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="header__cart-item">
+                                        <img class="header__cart-list-img"src="./Resource/img/notify1.png" alt="">
+                                        <div class="header__cart-item-info">
+                                            <div class="info-head">
+                                                <h5 class="header__cart-item-name">Kem duong da loc l</h5>
+                                                <div class="info-head-price-warp">
+                                                    <span class="header__cart-item-price">300.000đ</span>
+                                                    <span class="header__cart-item-multi">x</span>
+                                                    <span class="header__cart-item-amount">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="info-body">
+                                                <span class="header__cart-item-dep">phân loại hàng:bạc</span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!--end cart item-->
+                                </ul>
+
+                                <a href="#" class="header__cart-viewcart btn">Xem giỏ hàng</a>
+                            </div>
+                            <!-- cart:header__cart-list--have-cart -->
+                        </div>
+                    </div>
+                </div>
+                <!--end header 2-->
+            </div>
+
+            <div>
+                <ul class="header__sort-bar">
+                    <li class="header__sort-item">
+                        <a href="" class="header__sort-link">Liên quan</a>
+                    </li>
+                    <li class="header__sort-item">
+                        <a href="" class="header__sort-link">Mới nhất</a>
+                    </li>
+                    <li class="header__sort-item">
+                        <a href="" class="header__sort-link">Bán chạy</a>
+                    </li>
+                    <li class="header__sort-item">
+                        <a href="" class="header__sort-link">Giá</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <!--end header-->
+
+        <!--body-->
+
+        <div class="app__container">
+            <div class="grid wide">
+
+                <div class="grid__row app__content">
+                    <div class="grid__column-2">
+                        <nav class="category">
+                            <h3 class="category__heading">
+                                <ion-icon class="category__heading-icon" name="list-outline"></ion-icon>
+                                 Danh mục
+                            </h3>
+            
+                            <ul class="category-list">
+                                <li class="category-item category-item--active">
+                                    <a class="category-item__link"href="">Sản phẩm</a>
+                                </li>
+            
+                                <li class="category-item">
+                                    <a class="category-item__link"href="">Trang điểm mắt 1</a>
+                                </li>
+            
+                                <li class="category-item">
+                                    <a class="category-item__link"href="">Trang điểm mắt 2</a>
+                                </li>
+                                
+                                <li class="category-item">
+                                    <a class="category-item__link"href="">Trang điểm mắt 3</a>
+                                </li>
+                                
+                                <li class="category-item">
+                                    <a class="category-item__link"href="">Trang điểm mắt 4</a>
+                                </li>
+
+                                <li class="category-item">
+                                    <a class="category-item__link"href="">Trang điểm mắt 5</a>
+                                </li>
+                            </ul>
+                            
+                        </nav>
+                    </div>
+    
+                    <div class="grid__column-10">
+                        <div class="home-filter hideon-mobileandtablet">
+                            <span class="home-filter__lable">Sắp xếp theo</span>
+                            <button class="home-filte__button">Phổ biến</button>
+                            <button class="home-filte__button home-filte__button--color">Mới nhất</button>
+                            <button class="home-filte__button">Bán chạy</button>
+
+                            <div class="select-input">
+                                <span class="select-input__lable">Giá</span>
+                                <ion-icon class="select-input__icon" name="chevron-down-outline"></ion-icon>
+                                <ul class="select-input__list">
+                                    <li class="select-input__item"><a class="select-input-link" href="#">Gía từ thấp đến cao</a></li>
+                                    <li class="select-input__item"><a class="select-input-link" href="#">Gía từ cao đến thấp</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="home-filter__page">
+                                <span class="home-filter__page-num">
+                                    <span class="home-filter__page-current">1</span> / 14
+                                </span>
+
+                                <div class="home-filter__page-control">
+                                    <a style="text-decoration: none;" href="" class="home-filter__page-btn home-filter__page-btn-border"> < </a>
+                                    <a style="text-decoration: none;" href="" class="home-filter__page-btn"> > </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="home-product">
+                            <div class="grid__row">
+                                <!--product-->
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div style="background-image: url(https://cf.shopee.vn/file/c774a66c310ca01791f1a0e0b02dd716);" class="home-product-item__img"></div>
+                                        <h4 class="home-product-item__name">Áo chun chất lượng cao jing jang seoul ding dang fing fang lmao fuck fing</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000d</span>
+                                            <span class="home-product-item__price-current">999.000d</span>
+                                        </div>  
+
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <ion-icon class="home-product-item__like-icon-empty home-product-item__like-cursor" name="heart-outline"></ion-icon>
+                                                <ion-icon class="home-product-item__like-icon-fill home-product-item__like-cursor" name="heart"></ion-icon>
+                                            </span>
+
+                                            <div class="home-product-item__rating">
+                                                <ion-icon class="home-product-item-star home-product-item--rated" name="star-sharp"></ion-icon>
+                                                <ion-icon class="home-product-item-star home-product-item--rated" name="star-sharp"></ion-icon>
+                                                <ion-icon class="home-product-item-star" name="star-sharp"></ion-icon>
+                                                <ion-icon class="home-product-item-star" name="star-sharp"></ion-icon>
+                                                <ion-icon class="home-product-item-star" name="star-sharp"></ion-icon>
+                                            </div>
+                                            <span class="home-product-item__sold">88 đã bán</span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Whoo</span>
+                                            <span class="home-product-item__origin-name">Japan</span>
+                                        </div>
+
+                                        <div class="home-product-item__favourite">
+                                            <ion-icon name="checkmark-sharp"></ion-icon>
+                                            Yêu thích
+                                        </div>                                            
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">
+                                                10%
+                                            </span>
+                                            <span class="home-product-item__sale-off-lable">
+                                                Giảm
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div style="background-image: url(https://cf.shopee.vn/file/c774a66c310ca01791f1a0e0b02dd716);" class="home-product-item__img"></div>
+                                        <h4 class="home-product-item__name">Áo chun chất lượng cao jing jang seoul ding dang fing fang lmao fuck fing</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000d</span>
+                                            <span class="home-product-item__price-current">999.000d</span>
+                                        </div>  
+
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <ion-icon class="home-product-item__like-icon-empty home-product-item__like-cursor" name="heart-outline"></ion-icon>
+                                                <ion-icon class="home-product-item__like-icon-fill home-product-item__like-cursor" name="heart"></ion-icon>
+                                            </span>
+
+                                            <div class="home-product-item__rating">
+                                                <ion-icon class="home-product-item-star home-product-item--rated" name="star-sharp"></ion-icon>
+                                                <ion-icon class="home-product-item-star home-product-item--rated" name="star-sharp"></ion-icon>
+                                                <ion-icon class="home-product-item-star" name="star-sharp"></ion-icon>
+                                                <ion-icon class="home-product-item-star" name="star-sharp"></ion-icon>
+                                                <ion-icon class="home-product-item-star" name="star-sharp"></ion-icon>
+                                            </div>
+                                            <span class="home-product-item__sold">88 đã bán</span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Whoo</span>
+                                            <span class="home-product-item__origin-name">Japan</span>
+                                        </div>
+
+                                        <div class="home-product-item__favourite">
+                                            <ion-icon name="checkmark-sharp"></ion-icon>
+                                            Yêu thích
+                                        </div>                                            
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">
+                                                10%
+                                            </span>
+                                            <span class="home-product-item__sale-off-lable">
+                                                Giảm
+                                            </span>
+                                        </div>
+                                    </a>
+
+                                    
+                                </div>
+
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div style="background-image: url(https://cf.shopee.vn/file/c774a66c310ca01791f1a0e0b02dd716);" class="home-product-item__img"></div>
+                                        <h4 class="home-product-item__name">Áo chun chất lượng cao jing jang seoul ding dang fing fang lmao fuck fing</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000d</span>
+                                            <span class="home-product-item__price-current">999.000d</span>
+                                        </div>  
+
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <ion-icon class="home-product-item__like-icon-empty home-product-item__like-cursor" name="heart-outline"></ion-icon>
+                                                <ion-icon class="home-product-item__like-icon-fill home-product-item__like-cursor" name="heart"></ion-icon>
+                                            </span>
+
+                                            <div class="home-product-item__rating">
+                                                <ion-icon class="home-product-item-star home-product-item--rated" name="star-sharp"></ion-icon>
+                                                <ion-icon class="home-product-item-star home-product-item--rated" name="star-sharp"></ion-icon>
+                                                <ion-icon class="home-product-item-star" name="star-sharp"></ion-icon>
+                                                <ion-icon class="home-product-item-star" name="star-sharp"></ion-icon>
+                                                <ion-icon class="home-product-item-star" name="star-sharp"></ion-icon>
+                                            </div>
+                                            <span class="home-product-item__sold">88 đã bán</span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Whoo</span>
+                                            <span class="home-product-item__origin-name">Japan</span>
+                                        </div>
+
+                                        <div class="home-product-item__favourite">
+                                            <ion-icon name="checkmark-sharp"></ion-icon>
+                                            Yêu thích
+                                        </div>                                            
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">
+                                                10%
+                                            </span>
+                                            <span class="home-product-item__sale-off-lable">
+                                                Giảm
+                                            </span>
+                                        </div>
+                                    </a>
+
+                                    
+                                </div>
+
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div style="background-image: url(https://cf.shopee.vn/file/c774a66c310ca01791f1a0e0b02dd716);" class="home-product-item__img"></div>
+                                        <h4 class="home-product-item__name">Áo chun chất lượng cao jing jang seoul ding dang fing fang lmao fuck fing</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000d</span>
+                                            <span class="home-product-item__price-current">999.000d</span>
+                                        </div>  
+
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <ion-icon class="home-product-item__like-icon-empty home-product-item__like-cursor" name="heart-outline"></ion-icon>
+                                                <ion-icon class="home-product-item__like-icon-fill home-product-item__like-cursor" name="heart"></ion-icon>
+                                            </span>
+
+                                            <div class="home-product-item__rating">
+                                                <ion-icon class="home-product-item-star home-product-item--rated" name="star-sharp"></ion-icon>
+                                                <ion-icon class="home-product-item-star home-product-item--rated" name="star-sharp"></ion-icon>
+                                                <ion-icon class="home-product-item-star" name="star-sharp"></ion-icon>
+                                                <ion-icon class="home-product-item-star" name="star-sharp"></ion-icon>
+                                                <ion-icon class="home-product-item-star" name="star-sharp"></ion-icon>
+                                            </div>
+                                            <span class="home-product-item__sold">88 đã bán</span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Whoo</span>
+                                            <span class="home-product-item__origin-name">Japan</span>
+                                        </div>
+
+                                        <div class="home-product-item__favourite">
+                                            <ion-icon name="checkmark-sharp"></ion-icon>
+                                            Yêu thích
+                                        </div>                                            
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">
+                                                10%
+                                            </span>
+                                            <span class="home-product-item__sale-off-lable">
+                                                Giảm
+                                            </span>
+                                        </div>
+                                    </a>
+
+                                    
+                                </div>
+
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div style="background-image: url(https://cf.shopee.vn/file/c774a66c310ca01791f1a0e0b02dd716);" class="home-product-item__img"></div>
+                                        <h4 class="home-product-item__name">Áo chun chất lượng cao jing jang seoul ding dang fing fang lmao fuck fing</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000d</span>
+                                            <span class="home-product-item__price-current">999.000d</span>
+                                        </div>  
+
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <ion-icon class="home-product-item__like-icon-empty home-product-item__like-cursor" name="heart-outline"></ion-icon>
+                                                <ion-icon class="home-product-item__like-icon-fill home-product-item__like-cursor" name="heart"></ion-icon>
+                                            </span>
+
+                                            <div class="home-product-item__rating">
+                                                <ion-icon class="home-product-item-star home-product-item--rated" name="star-sharp"></ion-icon>
+                                                <ion-icon class="home-product-item-star home-product-item--rated" name="star-sharp"></ion-icon>
+                                                <ion-icon class="home-product-item-star" name="star-sharp"></ion-icon>
+                                                <ion-icon class="home-product-item-star" name="star-sharp"></ion-icon>
+                                                <ion-icon class="home-product-item-star" name="star-sharp"></ion-icon>
+                                            </div>
+                                            <span class="home-product-item__sold">88 đã bán</span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Whoo</span>
+                                            <span class="home-product-item__origin-name">Japan</span>
+                                        </div>
+
+                                        <div class="home-product-item__favourite">
+                                            <ion-icon name="checkmark-sharp"></ion-icon>
+                                            Yêu thích
+                                        </div>                                            
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">
+                                                10%
+                                            </span>
+                                            <span class="home-product-item__sale-off-lable">
+                                                Giảm
+                                            </span>
+                                        </div>
+                                    </a>
+
+                                    
+                                </div>
+
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div style="background-image: url(https://cf.shopee.vn/file/c774a66c310ca01791f1a0e0b02dd716);" class="home-product-item__img"></div>
+                                        <h4 class="home-product-item__name">Áo chun chất lượng cao jing jang seoul ding dang fing fang lmao fuck fing</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000d</span>
+                                            <span class="home-product-item__price-current">999.000d</span>
+                                        </div>  
+
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <ion-icon class="home-product-item__like-icon-empty home-product-item__like-cursor" name="heart-outline"></ion-icon>
+                                                <ion-icon class="home-product-item__like-icon-fill home-product-item__like-cursor" name="heart"></ion-icon>
+                                            </span>
+
+                                            <div class="home-product-item__rating">
+                                                <ion-icon class="home-product-item-star home-product-item--rated" name="star-sharp"></ion-icon>
+                                                <ion-icon class="home-product-item-star home-product-item--rated" name="star-sharp"></ion-icon>
+                                                <ion-icon class="home-product-item-star" name="star-sharp"></ion-icon>
+                                                <ion-icon class="home-product-item-star" name="star-sharp"></ion-icon>
+                                                <ion-icon class="home-product-item-star" name="star-sharp"></ion-icon>
+                                            </div>
+                                            <span class="home-product-item__sold">88 đã bán</span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Whoo</span>
+                                            <span class="home-product-item__origin-name">Japan</span>
+                                        </div>
+
+                                        <div class="home-product-item__favourite">
+                                            <ion-icon name="checkmark-sharp"></ion-icon>
+                                            Yêu thích
+                                        </div>                                            
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">
+                                                10%
+                                            </span>
+                                            <span class="home-product-item__sale-off-lable">
+                                                Giảm
+                                            </span>
+                                        </div>
+                                    </a>
+
+                                    
+                                </div>
+
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div style="background-image: url(https://cf.shopee.vn/file/c774a66c310ca01791f1a0e0b02dd716);" class="home-product-item__img"></div>
+                                        <h4 class="home-product-item__name">Áo chun chất lượng cao jing jang seoul ding dang fing fang lmao fuck fing</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000d</span>
+                                            <span class="home-product-item__price-current">999.000d</span>
+                                        </div>  
+
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <ion-icon class="home-product-item__like-icon-empty home-product-item__like-cursor" name="heart-outline"></ion-icon>
+                                                <ion-icon class="home-product-item__like-icon-fill home-product-item__like-cursor" name="heart"></ion-icon>
+                                            </span>
+
+                                            <div class="home-product-item__rating">
+                                                <ion-icon class="home-product-item-star home-product-item--rated" name="star-sharp"></ion-icon>
+                                                <ion-icon class="home-product-item-star home-product-item--rated" name="star-sharp"></ion-icon>
+                                                <ion-icon class="home-product-item-star" name="star-sharp"></ion-icon>
+                                                <ion-icon class="home-product-item-star" name="star-sharp"></ion-icon>
+                                                <ion-icon class="home-product-item-star" name="star-sharp"></ion-icon>
+                                            </div>
+                                            <span class="home-product-item__sold">88 đã bán</span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Whoo</span>
+                                            <span class="home-product-item__origin-name">Japan</span>
+                                        </div>
+
+                                        <div class="home-product-item__favourite">
+                                            <ion-icon name="checkmark-sharp"></ion-icon>
+                                            Yêu thích
+                                        </div>                                            
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">
+                                                10%
+                                            </span>
+                                            <span class="home-product-item__sale-off-lable">
+                                                Giảm
+                                            </span>
+                                        </div>
+                                    </a>
+
+                                    
+                                </div>
+
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div style="background-image: url(https://cf.shopee.vn/file/c774a66c310ca01791f1a0e0b02dd716);" class="home-product-item__img"></div>
+                                        <h4 class="home-product-item__name">Áo chun chất lượng cao jing jang seoul ding dang fing fang lmao fuck fing</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000d</span>
+                                            <span class="home-product-item__price-current">999.000d</span>
+                                        </div>  
+
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <ion-icon class="home-product-item__like-icon-empty home-product-item__like-cursor" name="heart-outline"></ion-icon>
+                                                <ion-icon class="home-product-item__like-icon-fill home-product-item__like-cursor" name="heart"></ion-icon>
+                                            </span>
+
+                                            <div class="home-product-item__rating">
+                                                <ion-icon class="home-product-item-star home-product-item--rated" name="star-sharp"></ion-icon>
+                                                <ion-icon class="home-product-item-star home-product-item--rated" name="star-sharp"></ion-icon>
+                                                <ion-icon class="home-product-item-star" name="star-sharp"></ion-icon>
+                                                <ion-icon class="home-product-item-star" name="star-sharp"></ion-icon>
+                                                <ion-icon class="home-product-item-star" name="star-sharp"></ion-icon>
+                                            </div>
+                                            <span class="home-product-item__sold">88 đã bán</span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Whoo</span>
+                                            <span class="home-product-item__origin-name">Japan</span>
+                                        </div>
+
+                                        <div class="home-product-item__favourite">
+                                            <ion-icon name="checkmark-sharp"></ion-icon>
+                                            Yêu thích
+                                        </div>                                            
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">
+                                                10%
+                                            </span>
+                                            <span class="home-product-item__sale-off-lable">
+                                                Giảm
+                                            </span>
+                                        </div>
+                                    </a>
+
+                                    
+                                </div>
+
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div style="background-image: url(https://cf.shopee.vn/file/c774a66c310ca01791f1a0e0b02dd716);" class="home-product-item__img"></div>
+                                        <h4 class="home-product-item__name">Áo chun chất lượng cao jing jang seoul ding dang fing fang lmao fuck fing</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000d</span>
+                                            <span class="home-product-item__price-current">999.000d</span>
+                                        </div>  
+
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <ion-icon class="home-product-item__like-icon-empty home-product-item__like-cursor" name="heart-outline"></ion-icon>
+                                                <ion-icon class="home-product-item__like-icon-fill home-product-item__like-cursor" name="heart"></ion-icon>
+                                            </span>
+
+                                            <div class="home-product-item__rating">
+                                                <ion-icon class="home-product-item-star home-product-item--rated" name="star-sharp"></ion-icon>
+                                                <ion-icon class="home-product-item-star home-product-item--rated" name="star-sharp"></ion-icon>
+                                                <ion-icon class="home-product-item-star" name="star-sharp"></ion-icon>
+                                                <ion-icon class="home-product-item-star" name="star-sharp"></ion-icon>
+                                                <ion-icon class="home-product-item-star" name="star-sharp"></ion-icon>
+                                            </div>
+                                            <span class="home-product-item__sold">88 đã bán</span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Whoo</span>
+                                            <span class="home-product-item__origin-name">Japan</span>
+                                        </div>
+
+                                        <div class="home-product-item__favourite">
+                                            <ion-icon name="checkmark-sharp"></ion-icon>
+                                            Yêu thích
+                                        </div>                                            
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">
+                                                10%
+                                            </span>
+                                            <span class="home-product-item__sale-off-lable">
+                                                Giảm
+                                            </span>
+                                        </div>
+                                    </a>
+
+                                    
+                                </div>
+
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div style="background-image: url(https://cf.shopee.vn/file/c774a66c310ca01791f1a0e0b02dd716);" class="home-product-item__img"></div>
+                                        <h4 class="home-product-item__name">Áo chun chất lượng cao jing jang seoul ding dang fing fang lmao fuck fing</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000d</span>
+                                            <span class="home-product-item__price-current">999.000d</span>
+                                        </div>  
+
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <ion-icon class="home-product-item__like-icon-empty home-product-item__like-cursor" name="heart-outline"></ion-icon>
+                                                <ion-icon class="home-product-item__like-icon-fill home-product-item__like-cursor" name="heart"></ion-icon>
+                                            </span>
+
+                                            <div class="home-product-item__rating">
+                                                <ion-icon class="home-product-item-star home-product-item--rated" name="star-sharp"></ion-icon>
+                                                <ion-icon class="home-product-item-star home-product-item--rated" name="star-sharp"></ion-icon>
+                                                <ion-icon class="home-product-item-star" name="star-sharp"></ion-icon>
+                                                <ion-icon class="home-product-item-star" name="star-sharp"></ion-icon>
+                                                <ion-icon class="home-product-item-star" name="star-sharp"></ion-icon>
+                                            </div>
+                                            <span class="home-product-item__sold">88 đã bán</span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Whoo</span>
+                                            <span class="home-product-item__origin-name">Japan</span>
+                                        </div>
+
+                                        <div class="home-product-item__favourite">
+                                            <ion-icon name="checkmark-sharp"></ion-icon>
+                                            Yêu thích
+                                        </div>                                            
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">
+                                                10%
+                                            </span>
+                                            <span class="home-product-item__sale-off-lable">
+                                                Giảm
+                                            </span>
+                                        </div>
+                                    </a>
+
+                                    
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <ul class="pagination">
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">
+                                    <ion-icon class="pagination-item__icon--left" name="chevron-back"></ion-icon>
+                                </a>
+                            </li>
+
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link pagination-item__link--current">1</a>
+                            </li>
+                            
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link"> 2</a>
+                            </li>
+
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link"> 3</a>
+                            </li>
+
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link"> 4</a>
+                            </li>
+
+                            <li class="pagination-item">
+                                ...
+                            </li>
+
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link"> 14</a>
+                            </li>
+
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">
+                                    <ion-icon class="pagination-item__icon--right" name="chevron-forward"></ion-icon>
+                                </a>
+                            </li>
+                        </ul>
+                    </div> 
+
+                </div>
+            </div>
+
+
+
+        </div>
+        <!--end body-->
+
+        <!--footer-->
+        <footer class="footer">
+            <div class="grid wide">
+                <div class="grid__row">
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">
+                            Chăm sóc khách hàng
+                        </h3>
+                            <ul class="footer__list">
+                                <li class="footer__list-item">
+                                    <a class="footer__list-link" href="">Trung tâm trợ giúp</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a class="footer__list-link" href="">ST-shopmail</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a class="footer__list-link" href="">Hướng dẫn mua hàng</a>
+                                </li>
+                            </ul>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">
+                            giới thiệu
+                        </h3>
+                            <ul class="footer__list">
+                                <li class="footer__list-item">
+                                    <a class="footer__list-link" href="">Giới thiệu</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a class="footer__list-link" href="">Tuyển dụng</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a class="footer__list-link" href="">Điều khoản</a>
+                                </li>
+                            </ul>
+
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">
+                            danh mục
+                        </h3>
+                            <ul class="footer__list">
+                                <li class="footer__list-item">
+                                    <a class="footer__list-link" href="">Trang điểm mặt</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a class="footer__list-link" href="">Trang điểm môi</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a class="footer__list-link" href="">Trang điểm mắt</a>
+                                </li>
+                            </ul>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">
+                            kết nối
+                        </h3>
+                            <ul class="footer__list">
+                                <li class="footer__list-item">
+                                    <ion-icon name="logo-facebook"></ion-icon>
+                                    <a class="footer__list-link" href="https://www.facebook.com/Akami32">facebook</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <ion-icon name="logo-instagram"></ion-icon>
+                                    <a class="footer__list-link" href="./Resource/pagerenhanh/pageerror.html">instagram</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <ion-icon name="logo-twitter"></ion-icon>
+                                    <a class="footer__list-link" href="./Resource/pagerenhanh/pageerror.html">twitter</a>
+                                </li>
+                            </ul>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">
+                            Tải ứng dụng
+                        </h3>
+                            <ul class="footer__list">
+                                <li class="footer__list-item">
+                                    <ion-icon name="logo-google-playstore"></ion-icon>
+                                    <a class="footer__list-link" href="./Resource/pagerenhanh/pageerror.html">Chplay</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <ion-icon name="logo-apple"></ion-icon>
+                                    <a class="footer__list-link" href="./Resource/pagerenhanh/pageerror.html">Appstore</a>
+                                </li>
+                            </ul>
+                    </div>
+                </div>
+
+                <div class="grid__row">
+                    <div class="footer__text-warp">
+                        <p class="footer__text">2022-bản quyền thuộc về ST </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!--modal layout-->
+    <!-- <div class="modal">
+        <div class="modal__overlay">
+
+        </div>
+        <div class="modal__body">             -->
+            <!--Registe-->
+            
+            <!-- <div class="auth-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng ký</h3>
+                        <span class="auth-form__switch-btn"> <ion-icon class="switch-icon" name="swap-vertical-outline"></ion-icon> Đăng nhập</span>
+                    </div>
+
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <div>
+                                <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                            </div>
+                            <div>
+                                <input type="password" class="auth-form__input" placeholder="Mật khẩu">
+                            </div>
+                            <div>
+                                <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="auth-form__aside">
+                        <p class="auth-form__policy-text">Bằng việc đăng ký, bạn đồng ý với Shoppe về 
+                        <a class="auth-form__policy-link"href="">Điều khoản dịch vụ</a> &  
+                        <a class="auth-form__policy-link" href="">Chính sách bảo mật</a></p>
+                    </div>
+
+                    <div class="auth-form__controls">
+                        <button class="auth-form__Back btn">Trở Lại</button>
+                        <button class="auth-form__Register btn">Đăng ký</button>
+                    </div>
+                </div>
+                <div class="ngancach">
+                    <p class="ngancach__text"> _____________________________________________Hoặc______________________________________________</p>
+                </div>
+                <div class="auth-form__socials">
+                    <button class="auth-form__facebook btn"><ion- class="socials-icon" name="logo-facebook"></ion-  > Kết nối facebook</button>
+                    <button class="auth-form__google btn"><ion-icon class="socials-icon" name="logo-google"></ion-icon> Kết nối google</button>
+                </div>
+            </div> -->
+            
+            <!--End Registe-->
+            <!--Login-->
+
+            <!-- <div class="auth-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng nhập</h3>
+                        <span class="auth-form__switch-btn"> <ion-icon class="switch-icon" name="swap-vertical-outline"></ion-icon> Đăng ký</span>
+                    </div>
+
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <div>
+                                <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                            </div>
+                            <div>   
+                                <input type="password" class="auth-form__input" placeholder="Mật khẩu">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="auth-form__aside">
+                        <div class="auth-form__help">
+                            <a href="" class="auth-form-help__link ForgotPassword">Quên mật khẩu</a>
+                            <span class="ngancach2"></span>
+                            <a href="" class="auth-form-help__link NeedHelp">Cần trợ giúp?</a>
+                        </div>
+                    </div>
+
+                    <div class="auth-form__controls">
+                        <button class="auth-form__Back btn">Trở Lại</button>
+                        <button class="auth-form__Register btn">Đăng Nhập</button>
+                    </div>
+                </div>
+                <div class="ngancach">
+                    <p class="ngancach__text"> _____________________________________________Hoặc______________________________________________</p>
+                </div>
+                <div class="auth-form__socials">
+                    <button class="auth-form__facebook btn"><ion-icon class="socials-icon" name="logo-facebook"></ion-icon> Đăng nhập facebook</button>
+                    <button class="auth-form__google btn"><ion-icon class="socials-icon" name="logo-google"></ion-icon> Đăng nhập google</button>
+                </div>
+            </div> -->
+            <!--End Login-->
+        </div>
+    </div>
+
+</body>
+<script src="./Resource/js/javascript.js"></script>
+</html>

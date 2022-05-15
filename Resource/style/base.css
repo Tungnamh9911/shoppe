@@ -1,0 +1,187 @@
+/*khaibaobien*/
+
+:root{
+    --white_color: #fff;
+    --black_color:#000;
+    --text_color: #333;
+    --star_rated_color: rgb(255, 55, 0);
+
+}
+
+*{
+    box-sizing: inherit;
+    list-style: none;
+}
+
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    box-sizing: border-box;
+}
+
+/*reponsive*/
+.grid__row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+/*test*/
+.grid__column-2{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 16.6667%;
+}
+
+.grid__column-2-4{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 20%;
+
+}
+
+.grid__column-10{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 83.3334%;
+}
+
+
+/*Animation*/
+
+@keyframes fadeIn{
+    from{
+        top: 50px;
+        opacity: 0;
+    }
+    to{
+        top:100%;
+        opacity: 1;
+    }
+}
+
+@keyframes growup{
+    from{
+        opacity: 0;
+        transform: scale(0)
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes Fadein{
+    from{
+        opacity: 0;
+
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes Grow{
+    from{
+        transform: scale(0.6);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+
+/**modal css**/
+
+.modal{
+    animation: Fadein ease-in 0.2s;
+    position: fixed;
+    right:0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+}
+.modal__overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+}
+.modal__body{
+    animation: Grow linear 0.2s;
+    background-color: white;
+    margin: auto;
+    position:relative;
+    z-index: 2;
+    border-radius: 10px;
+}
+
+/**button style**/
+.btn{
+    min-width: 142px;
+    height: 36px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    padding: 0;
+    cursor: pointer;
+}
+
+.auth-form__Register.btn{
+    color: white;
+    background-color: rgb(255, 115, 0);
+}
+
+.btn.btn-disabled{
+    color: #ccc;
+    cursor: default;
+    background-color: #999;
+}
+
+/*Selection*/
+.select-input{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 34px;
+    padding: 0 12px;
+    border-radius: 2px;
+    background-color: white;
+    min-width: 200px;
+}
+.select-input:hover .select-input__list{
+    display: block;
+}
+
+.select-input__icon{
+    font-size: 1.4rem;
+    color: rgb(131,131,131);
+    position: relative;
+    top: 1px;
+}
+
+.select-input__list{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 25px;
+    border-radius: 2px;
+    background-color: white;
+    padding: 10px 16px;
+    display: none;
+    animation: fadeIn linear 0.1s;
+}
+
+.select-input-link{
+    font-size: 1.4rem;
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 5px 0;
+}
+.select-input-link:hover{
+    color:orangered;
+    transition: ease-in 0.1s;
+}
